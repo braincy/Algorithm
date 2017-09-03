@@ -1,5 +1,9 @@
+#ifndef EXTRA_H_H
+#define EXTRA_H_H
+
 #include <iostream>
 #include <stdlib.h>
+#include <string>
 #include <vector>
 #include <time.h>
 using namespace std;
@@ -34,3 +38,5 @@ void show(vector<int> a) {
     }
     cout << endl;
 }
+
+#endif
