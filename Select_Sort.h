@@ -9,3 +9,4 @@ void select_sort(vector<int>& a) {
         swap(a[i], a[min]);
     }
 }
+
