@@ -1,5 +1,6 @@
 #include "Select_Sort.h"
 #include "Insert_Sort.h"
+#include "Shell_Sort.h"
 
 int main(int argc, char *argv[]) {
     cout << "please input init vector size: " << endl;
@@ -11,9 +12,10 @@ int main(int argc, char *argv[]) {
     show(a);
     
     //判断当前要使用的排序方法
-    string method[] = {"select", "insert"};
+    string method[] = {"select", "insert", "shell"};
     if(argv[1] == method[0]) select_sort(a);
     else if(argv[1] == method[1]) insert_sort(a);
+    else if(argv[1] == method[2]) shell_sort(a, atoi(argv[2]));
     else {
         cout << "sort method error" << endl;
         return -1;
