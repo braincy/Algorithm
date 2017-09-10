@@ -6,6 +6,7 @@
 #include <string>
 #include <vector>
 #include <time.h>
+#include <math.h>
 using namespace std;
 
 vector<int> init_vec(int n) {
